@@ -1,9 +1,7 @@
 package com.stv.factory.factorytests;
 
 import com.stv.factory.factorypages.AuthorizedPage;
-import com.stv.factory.factorypages.GherkinFactoryPage;
 import com.stv.factory.factorypages.LoginPage;
-import com.stv.framework.core.drivers.Driver;
 import org.testng.Assert;
 
 public class Test {

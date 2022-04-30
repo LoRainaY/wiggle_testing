@@ -48,16 +48,4 @@ public class LoginPage extends FactoryPage {
         buttonLogin.click();
     }
 
-
-
-    public void loginCustomer() {
-        emailTextForm.click();
-        enterEmailTextForm();
-        passwordTextForm.click();
-        enterPasswordTextForm();
-        clickOnLoginButton();
-    }
-
-
-
 }
