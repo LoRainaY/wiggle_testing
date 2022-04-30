@@ -40,10 +40,10 @@ public class FirstPage extends BasicTest {
        loginPage.clickOnLoginButton();
     }
 
-    @Then("user goes to the main page")
+    @Then("user goes to the account page")
     public void user_goes_to_the_main_page() {
         // Write code here that turns the phrase above into concrete actions
-        Assert.assertEquals(new AuthorizedPage().isAccountContainerDisplayed(), true, "Registration page isn't loaded properly");
+        Assert.assertEquals(new AuthorizedPage().isAccountContainerDisplayed(), true);
 
     }
 

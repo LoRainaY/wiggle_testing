@@ -5,4 +5,4 @@ Feature: Load Air Home page
     When user enters email
     And enters password
     And clicks on Sign in securely button
-    Then user goes to the main page
+    Then user goes to the account page
