@@ -1,4 +1,4 @@
-Feature: Load Air Home page
+Feature: Load Account page
 
   Scenario: #01 Filling in the login information
     Given  the page is loaded
