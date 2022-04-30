@@ -14,7 +14,7 @@ import static com.stv.framework.core.lib.WigglePageURLs.START_URL;
 
 public class FirstPage extends BasicTest {
     LoginPage loginPage=new LoginPage();
-    @Given("the page is loaded")
+    @Given("the login page is loaded")
     public void the_page_is_loaded() {
         getDriver().get(START_URL);
         getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
