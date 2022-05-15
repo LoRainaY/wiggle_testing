@@ -8,10 +8,14 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPage extends FactoryPage {
     @FindBy(className = "bem-checkout__login-container")
     private WebElement loginContainer;
+    @FindBy(className = "bem-checkout__logo")
+    private WebElement linkMainPage;
 
     public boolean isLoginContainerDisplayed(){
         return loginContainer.isDisplayed();
     }
+    @FindBy(xpath = "//*[@id=\"wiggle\"]/div/div[4]/div/a")
+    private WebElement linkSecure;
 
     @FindBy(id = "DualRegisterEmailModel_Email")
     private WebElement emailForm;
@@ -47,5 +51,10 @@ public class LoginPage extends FactoryPage {
     public void clickOnLoginButton() {
         buttonLogin.click();
     }
+
+    public void clickOnLinkSecureBySectigo(){linkSecure.click();}
+
+    public void clickOnLinkMainPage(){linkMainPage.click();}
+
 
 }

@@ -1,5 +1,6 @@
 package com.stv.framework.core.drivers;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -39,4 +40,9 @@ public class Driver {
         driver = new FirefoxDriver(capabilities);
 //        capabilities.setJavascriptEnabled(true);
     }
+    private static void scrollDownChromeDriver() {
+
+    }
+
+
 }
