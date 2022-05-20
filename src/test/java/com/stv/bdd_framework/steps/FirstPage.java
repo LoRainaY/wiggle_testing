@@ -22,17 +22,31 @@ public class FirstPage extends BasicTest {
 
     }
 
-    @When("user enters email")
+
+    @When("user enters {string}")
+    public void user_enters(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        loginPage.enterEmailTextForm(string);
+    }
+
+    @When("enters {string}")
+    public void enters(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        loginPage.enterPasswordTextForm(string);
+    }
+
+
+/*    @When("user enters email")
     public void user_enters_email() {
         // Write code here that turns the phrase above into concrete actions
         loginPage.enterEmailTextForm();
-    }
+    }*/
 
-    @When("enters password")
+/*    @When("enters password")
     public void enters_password() {
         // Write code here that turns the phrase above into concrete actions
         loginPage.enterPasswordTextForm();
-    }
+    }*/
 
     @When("clicks on Sign in securely button")
     public void clicks_on_sign_in_securely_button() {

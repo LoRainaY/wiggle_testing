@@ -2,6 +2,8 @@ package com.stv.factory.factorytests;
 
 import com.stv.factory.factorypages.AuthorizedPage;
 import com.stv.factory.factorypages.LoginPage;
+import com.stv.framework.core.lib.EmailString;
+import com.stv.framework.core.lib.PasswordString;
 import org.testng.Assert;
 
 public class Test {
@@ -9,8 +11,8 @@ public class Test {
 
     @org.testng.annotations.Test
     public void assertRegistrationPageOpened() {
-        loginCustomer.enterEmailTextForm();
-        loginCustomer.enterPasswordTextForm();
+        loginCustomer.enterEmailTextForm(EmailString.EMAIL);
+        loginCustomer.enterPasswordTextForm(PasswordString.PASSWORD);
         loginCustomer.clickOnLoginButton();
 
         Assert.assertEquals(new AuthorizedPage().isAccountContainerDisplayed(), true);

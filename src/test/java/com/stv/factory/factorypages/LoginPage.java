@@ -40,12 +40,12 @@ public class LoginPage extends FactoryPage {
         buttonNewCustomer.click();
     }
 
-    public void enterEmailTextForm() {
-        emailTextForm.sendKeys(EmailString.EMAIL);
+    public void enterEmailTextForm(String email) {
+        emailTextForm.sendKeys(email);
     }
 
-    public void enterPasswordTextForm() {
-        passwordTextForm.sendKeys(PasswordString.PASSWORD);
+    public void enterPasswordTextForm(String password) {
+        passwordTextForm.sendKeys(password);
     }
 
     public void clickOnLoginButton() {
